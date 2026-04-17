@@ -5,3 +5,8 @@ variable "vpc_name" {
 variable "vpc_cidr_block" {
   type    = string
 }
+
+variable "azs" {
+  type        = list(string)
+  description = "Availability Zones"
+}
